@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__fieldset{
+    background-color: $border-modal;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $background-color-modal;
+    padding: 2rem;
+  }
+  &__title{
+    font-weight: bold;
+    text-align: center;
+    color: $background-color-modal;
+  }
+  &__input{
+    margin-left: 1rem;
+    border-color: $input-border;
+    border-radius: 2rem;
+    padding: 0.7rem 1rem;
+    color: $input-border;
+    font-weight: bold;
+
+    &.error__border {
+      border: 2px solid $error-color;
+    }
+  }
+
+  &__label{
+    margin: 1rem 0;
+    padding: 1rem 0 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+
+}
+
